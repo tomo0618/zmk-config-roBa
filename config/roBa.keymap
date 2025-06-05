@@ -74,19 +74,19 @@
 
         num {
             bindings = <
-&kp F9        &kp F10         &kp F11     &kp F12           &kp LEFT_BRACKET                                                              &mt SEMICOLON COLON  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &mt LESS_THAN GREATER_THAN
-&kp F5        &kp F6          &kp LC(I)   &kp F8            &kp RIGHT_BRACKET  &kp LS(LG(V))      &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &mt ASTERISK SLASH   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &mt PLUS COLON
-&kp F1        &kp F2          &kp F3      &kp F4            &kp LEFT_ALT       &bt BT_PRV         &mt COMMA PERIOD                        &kp NUMBER_0         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL
-&kp LEFT_WIN  &kp LEFT_SHIFT  &kp ESCAPE  &kp LA(LEFT_ALT)  &kp SPACE          &none              &kp ENTER                               &kp BACKSPACE                                                  &none
+&kp F9        &kp F10         &kp F11     &kp F12    &kp LEFT_BRACKET                                                              &mt SEMICOLON COLON  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &mt LESS_THAN GREATER_THAN
+&kp F5        &kp F6          &kp LC(I)   &kp F8     &kp RIGHT_BRACKET  &kp LS(LG(V))      &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &mt ASTERISK SLASH   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &mt PLUS COLON
+&kp F1        &kp F2          &kp F3      &kp F4     &kp LEFT_ALT       &bt BT_PRV         &mt COMMA PERIOD                        &kp NUMBER_0         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL
+&kp LEFT_WIN  &kp LEFT_SHIFT  &kp ESCAPE  &kp SPACE  &none              &kp LEFT_ALT       &kp ENTER                               &kp BACKSPACE                                                  &none
             >;
         };
 
         vector {
             bindings = <
-&none         &kp LG(W)       &kp LG(P)      &kp LC(H)     &kp RS(RG(NUMBER_3))                                              &mkp MB5        &mkp MB3        &mkp RCLK  &kp HASH         &kp PERCENT
-&kp LG(A)     &kp LG(S)       &kp RS(RG(S))  &kp LG(F)     &kp C_AC_ZOOM_OUT     &kp LC(LA(KP_NUMBER_0))      &kp LG(LS(Z))  &mkp MB4        &kp UP_ARROW    &mkp LCLK  &kp AT           &kp DOUBLE_QUOTES
-&kp LG(Z)     &kp LG(X)       &kp LG(C)      &kp LG(V)     &kp C_AC_ZOOM_IN      &none                        &kp LG(Z)      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp EXCLAMATION  &kp QUESTION
-&kp LEFT_WIN  &kp LEFT_SHIFT  &kp ESCAPE     &kp LEFT_ALT  &kp SPACE             &bt BT_NXT                   &kp ENTER      &kp BACKSPACE                                               &kp PIPE
+&none         &kp LG(W)       &kp LG(P)      &kp LC(H)  &kp RS(RG(NUMBER_3))                                              &mkp MB5        &mkp MB3        &mkp RCLK  &kp HASH         &kp PERCENT
+&kp LG(A)     &kp LG(S)       &kp RS(RG(S))  &kp LG(F)  &kp C_AC_ZOOM_OUT     &kp LC(LA(KP_NUMBER_0))      &kp LG(LS(Z))  &mkp MB4        &kp UP_ARROW    &mkp LCLK  &kp AT           &kp DOUBLE_QUOTES
+&kp LG(Z)     &kp LG(X)       &kp LG(C)      &kp LG(V)  &kp C_AC_ZOOM_IN      &none                        &kp LG(Z)      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp EXCLAMATION  &kp QUESTION
+&kp LEFT_WIN  &kp LEFT_SHIFT  &kp ESCAPE     &kp SPACE  &bt BT_NXT            &kp LEFT_ALT                 &kp ENTER      &kp BACKSPACE                                               &kp PIPE
             >;
         };
     };
