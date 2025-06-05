@@ -65,28 +65,28 @@
             bindings = <
 &kp Q             &kp W           &kp E    &kp R         &kp T                                                     &kp Y          &kp U  &kp I                &kp O                    &kp P
 &kp A             &kp S           &kp D    &kp F         &kp G      &kp LS(LG(S))            &kp DELETE            &kp H          &kp J  &kp K                &kp L                    &kp MINUS
-&mt LEFT_SHIFT Z  &kp X           &kp C    &kp V         &kp B      &lt 3 LEFT_BRACKET       &kp LEFT_PARENTHESIS  &kp N          &kp M  &mt LESS_THAN COMMA  &mt GREATER_THAN PERIOD  &kp RIGHT_PARENTHESIS
+&mt LEFT_SHIFT Z  &kp X           &kp C    &kp V         &kp B      &lt 2 LEFT_BRACKET       &kp LEFT_PARENTHESIS  &kp N          &kp M  &mt LESS_THAN COMMA  &mt GREATER_THAN PERIOD  &kp RIGHT_PARENTHESIS
 &kp LG(LEFT_GUI)  &kp LEFT_SHIFT  &kp TAB  &kp LEFT_ALT  &kp SPACE  &lt 1 RIGHT_BRACKET      &kp ENTER             &kp BACKSPACE                                                       &lt 2 DOUBLE_QUOTES
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
-        FUNCTION {
+        num {
             bindings = <
 &kp F9        &kp F10         &kp F11     &kp F12           &kp LEFT_BRACKET                                        &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9  &mt COMMA PERIOD  &mt LESS_THAN GREATER_THAN
 &kp F5        &kp F6          &kp LC(I)   &kp F8            &kp RIGHT_BRACKET  &trans           &mt ASTERISK SLASH  &kp NUMBER_4   &kp NUMBER_5  &kp NUMBER_6  &mt PLUS MINUS    &mt SEMICOLON COLON
-&kp F1        &kp F2          &kp F3      &kp F4            &kp LEFT_ALT       &none            &kp NUMBER_0        &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL         &mt RPAR LEFT_PARENTHESIS
+&kp F1        &kp F2          &kp F3      &kp F4            &kp LEFT_ALT       &bt BT_PRV       &kp NUMBER_0        &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL         &mt RPAR LEFT_PARENTHESIS
 &kp LEFT_WIN  &kp LEFT_SHIFT  &kp ESCAPE  &kp LA(LEFT_ALT)  &kp SPACE          &lt 1 COLON      &kp ENTER           &kp BACKSPACE                                                &none
             >;
         };
 
-        NUM {
+        vector {
             bindings = <
-&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                   &kp CARET         &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
-&trans                      &trans           &trans           &trans           &trans        &trans                       &trans          &trans                                                                     &kp PIPE
+&none         &kp LG(W)       &kp LG(P)      &kp LC(H)     &kp RS(RG(NUMBER_3))                                              &mkp MB5        &mkp MB3        &mkp RCLK  &kp HASH         &kp PERCENT
+&kp LG(A)     &kp LG(S)       &kp RS(RG(S))  &kp LG(F)     &kp C_AC_ZOOM_OUT     &kp LC(LA(KP_NUMBER_0))      &kp LG(LS(Z))  &mkp MB4        &kp UP_ARROW    &mkp LCLK  &kp AT           &kp DOUBLE_QUOTES
+&kp LG(Z)     &kp LG(X)       &kp LG(C)      &kp LG(V)     &kp C_AC_ZOOM_IN      &none                        &kp LG(Z)      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp EXCLAMATION  &kp QUESTION
+&kp LEFT_WIN  &kp LEFT_SHIFT  &kp ESCAPE     &kp LEFT_ALT  &kp SPACE             &bt BT_NXT                   &kp ENTER      &kp BACKSPACE                                               &kp PIPE
             >;
         };
 
