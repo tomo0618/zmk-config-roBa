@@ -83,10 +83,10 @@
 
         vector {
             bindings = <
-&none         &kp LG(W)       &kp LG(P)      &kp LC(H)  &kp RS(RG(NUMBER_3))                                    &mkp MB5        &mkp MB3        &mkp RCLK  &kp HASH         &kp PERCENT
-&kp LG(A)     &kp LG(S)       &kp RS(RG(S))  &kp LG(F)  &kp C_AC_ZOOM_OUT     &kp LS(LG(V))      &kp LG(LS(Z))  &mkp MB4        &kp UP_ARROW    &mkp LCLK  &kp AT           &kp DOUBLE_QUOTES
-&kp LG(Z)     &kp LG(X)       &kp LG(C)      &kp LG(V)  &kp C_AC_ZOOM_IN      &kp LEFT_ALT       &kp LG(Z)      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp EXCLAMATION  &kp QUESTION
-&kp LEFT_WIN  &kp LEFT_SHIFT  &kp ESCAPE     &kp SPACE  &bt BT_NXT            &none              &kp ENTER      &kp BACKSPACE                                               &kp PIPE
+&none         &kp LG(W)       &kp LG(P)      &kp LC(H)  &kp RS(RG(NUMBER_3))                                    &kp PERCENT     &mkp MB4   &mkp MCLK     &mkp MB5   &kp HASH
+&kp LG(A)     &kp LG(S)       &kp RS(RG(S))  &kp LG(F)  &kp C_AC_ZOOM_OUT     &kp LS(LG(V))      &kp LG(LS(Z))  &kp AMPERSAND   &mkp RCLK  &kp UP_ARROW  &mkp LCLK  &kp AT_SIGN
+&kp LG(Z)     &kp LG(X)       &kp LG(C)      &kp LG(V)  &kp C_AC_ZOOM_IN      &kp LEFT_ALT       &kp LG(Z)      &kp UNDERSCORE  &kp LEFT   &kp DOWN      &kp RIGHT  &kp EXCLAMATION
+&kp LEFT_WIN  &kp LEFT_SHIFT  &kp ESCAPE     &kp SPACE  &bt BT_NXT            &none              &kp ENTER      &kp BACKSPACE                                       &kp QUESTION
             >;
         };
     };
