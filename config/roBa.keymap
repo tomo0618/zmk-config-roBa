@@ -68,7 +68,6 @@
 
             tap-ms = <20>;
         };
-
     };
 
     keymap {
@@ -82,7 +81,7 @@
 &kp LG(LEFT_GUI)  &kp LEFT_SHIFT  &kp TAB  &kp SPACE  &lt 1 LC(SPACE)  &lt 2 LG(M)        &kp ENTER             &lt 2 BACKSPACE                                                       &kp LG(TAB)
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         num {
