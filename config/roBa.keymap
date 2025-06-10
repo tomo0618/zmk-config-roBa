@@ -89,6 +89,7 @@
 &kp F1        &kp F2        &kp F3            &kp F4     &kp LEFT_ALT       &kp LEFT_SHIFT      &mt COMMA PERIOD    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &mt UNDER EQUAL             &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS
 &kp LEFT_WIN  &kp LEFT_ALT  &kp LC(UP_ARROW)  &kp SPACE  &none              &bt BT_PRV          &kp ENTER           &kp NUMBER_0                                                          &kp ESC
             >;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         vector {
@@ -98,6 +99,7 @@
 &kp LG(Z)     &kp LG(X)     &kp LG(C)         &kp LG(V)  &kp C_AC_ZOOM_IN      &kp LEFT_SHIFT      &kp LG(Z)      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp EXCLAMATION  &kp QUESTION
 &kp LEFT_WIN  &kp LEFT_ALT  &kp LC(UP_ARROW)  &kp SPACE  &bt BT_NXT            &none               &kp ENTER      &none                                                       &kp ESCAPE
             >;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         mouse {
@@ -107,6 +109,7 @@
 &none  &none  &none             &none  &none  &none      &kp LG(LEFT)   &mkp LCLK               &mkp RCLK             &mkp MB3                    &mkp MB4                  &mkp MB5
 &none  &none  &kp LC(UP_ARROW)  &none  &none  &none      &none          &none                                                                                               &kp ESCAPE
             >;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
     };
 };
