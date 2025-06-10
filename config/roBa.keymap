@@ -14,29 +14,19 @@
     combos {
         compatible = "zmk,combos";
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
+        bt0 {
+            bindings = <&bt BT_SEL 0>;
+            key-positions = <39 38>;
         };
 
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
+        bt3 {
+            bindings = <&bt BT_SEL 3>;
+            key-positions = <28 16>;
         };
 
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
-        };
-
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
-        };
-
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
+        bt4 {
+            bindings = <&bt BT_SEL 4>;
+            key-positions = <40 41>;
         };
     };
 
@@ -64,6 +54,7 @@
             label = "ENCODER_MSC_DOWN_UP";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
             tap-ms = <20>;
         };
     };
@@ -87,8 +78,9 @@
 &kp F9        &kp F10       &kp F11           &kp F12    &kp LEFT_BRACKET                                           &kp NUMBER_7  &kp NUMBER_8  &kp N9        &mt GREATER_THAN LESS_THAN  &kp BACKSPACE
 &kp F5        &kp F6        &kp LC(I)         &kp F8     &kp RIGHT_BRACKET  &kp LS(LG(V))       &mt ASTERISK SLASH  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &mt PLUS MINUS              &mt SEMICOLON COLON
 &kp F1        &kp F2        &kp F3            &kp F4     &kp LEFT_ALT       &kp LEFT_SHIFT      &mt COMMA PERIOD    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &mt UNDER EQUAL             &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS
-&kp LEFT_WIN  &kp LEFT_ALT  &kp LC(UP_ARROW)  &kp SPACE  &none              &bt BT_PRV          &kp ENTER           &kp NUMBER_0                                                          &kp ESC
+&kp LEFT_WIN  &kp LEFT_ALT  &kp LC(UP_ARROW)  &kp SPACE  &none              &bt BT_SEL 1        &kp ENTER           &kp NUMBER_0                                                          &kp ESC
             >;
+
             sensor-bindings = <&encoder_msc_down_up>;
         };
 
@@ -97,8 +89,9 @@
 &none         &kp LG(W)     &kp LG(P)         &kp LC(H)  &kp RS(RG(NUMBER_3))                                     &mkp MB4        &mkp MCLK       &mkp MB5   &kp HASH         &kp BACKSPACE
 &kp LG(A)     &kp LG(S)     &kp RS(RG(S))     &kp LG(F)  &kp C_AC_ZOOM_OUT     &kp LS(LG(V))       &kp LG(LS(Z))  &mkp LCLK       &kp UP_ARROW    &mkp RCLK  &kp AT_SIGN      &kp PERCENT
 &kp LG(Z)     &kp LG(X)     &kp LG(C)         &kp LG(V)  &kp C_AC_ZOOM_IN      &kp LEFT_SHIFT      &kp LG(Z)      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp EXCLAMATION  &kp QUESTION
-&kp LEFT_WIN  &kp LEFT_ALT  &kp LC(UP_ARROW)  &kp SPACE  &bt BT_NXT            &none               &kp ENTER      &none                                                       &kp ESCAPE
+&kp LEFT_WIN  &kp LEFT_ALT  &kp LC(UP_ARROW)  &kp SPACE  &bt BT_SEL 2          &none               &kp ENTER      &none                                                       &kp ESCAPE
             >;
+
             sensor-bindings = <&encoder_msc_down_up>;
         };
 
@@ -109,6 +102,7 @@
 &none  &none  &none             &none  &none  &none      &kp LG(LEFT)   &mkp LCLK               &mkp RCLK             &mkp MB3                    &mkp MB4                  &mkp MB5
 &none  &none  &kp LC(UP_ARROW)  &none  &none  &none      &none          &none                                                                                               &kp ESCAPE
             >;
+
             sensor-bindings = <&encoder_msc_down_up>;
         };
     };
