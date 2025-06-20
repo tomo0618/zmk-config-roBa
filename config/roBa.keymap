@@ -11,27 +11,6 @@
 };
 
 / {
-    // ===============================================================================
-    // ★★★ トラックボール速度調整設定 (ファイルの先頭に移動しました) ★★★
-    // ===============================================================================
-    input_processors {
-        compatible = "zmk,input-processors";
-        my_trackball_scaler: my_trackball_scaler {
-            compatible = "zmk,input-processor-scaler";
-            // ★★★ この scale の数値(2.0)を変更すると速度が変わります ★★★
-            // 1.5 で1.5倍速、3.0で3倍速になります。
-            scale = <2.0>;
-        };
-    };
-
-    trackball_listener {
-        compatible = "zmk,input-listener";
-        device = <&trackball>;
-        processors = <&my_trackball_scaler>;
-    };
-    // ===============================================================================
-
-
     combos {
         compatible = "zmk,combos";
 
@@ -119,7 +98,7 @@
         mouse {
             bindings = <
 &none  &none  &none        &none  &none                                   &kp LS(LG(DOWN_ARROW)) &kp LS(LG(UP_ARROW))   &kp LS(LA(LG(LEFT)))    &kp LS(LG(LA(UP_ARROW))) &none
-&none  &none  &none        &none  &none            &none                   &kp LG(right)          &kp LS(LG(LEFT_ARROW)) &kp LS(LG(RIGHT))      &kp LS(LA(LG(DOWN_ARROW))) &kp LS(LA(LG(RIGHT)))  &none
+&none  &none  &none        &none  &none            &none                   &kp LG(RIGHT)          &kp LS(LG(LEFT_ARROW)) &kp LS(LG(RIGHT))      &kp LS(LA(LG(DOWN_ARROW))) &kp LS(LA(LG(RIGHT)))  &none
 &none  &none  &none        &none  &none            &none                   &kp LG(LEFT)           &mkp LCLK              &mkp RCLK              &mkp MB3                 &mkp MB4                  &mkp MB5
 &none  &none  &kp LC(UP_ARROW) &none  &none            &none                   &none                  &none                  &kp ESCAPE
             >;
