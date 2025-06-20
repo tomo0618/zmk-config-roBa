@@ -7,12 +7,12 @@
 
 &mt {
     flavor = "balanced";
-    quick-tap-ms = ;
+    quick-tap-ms = <0>;
 };
 
 / {
     // ===============================================================================
-    // ★★★ トラックボール速度調整設定 ★★★
+    // ★★★ トラックボール速度調整設定 (ファイルの先頭に移動しました) ★★★
     // ===============================================================================
     input_processors {
         compatible = "zmk,input-processors";
@@ -20,7 +20,7 @@
             compatible = "zmk,input-processor-scaler";
             // ★★★ この scale の数値(2.0)を変更すると速度が変わります ★★★
             // 1.5 で1.5倍速、3.0で3倍速になります。
-            scale = <3.0>;
+            scale = <2.0>;
         };
     };
 
@@ -30,6 +30,7 @@
         processors = <&my_trackball_scaler>;
     };
     // ===============================================================================
+
 
     combos {
         compatible = "zmk,combos";
@@ -53,7 +54,7 @@
     macros {
         to_layer_0: to_layer_0 {
             compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = ;
+            #binding-cells = <1>;
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
@@ -72,7 +73,7 @@
         encoder_msc_down_up: encoder_msc_down_up {
             compatible = "zmk,behavior-sensor-rotate";
             label = "ENCODER_MSC_DOWN_UP";
-            #sensor-binding-cells = ;
+            #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 
             tap-ms = <20>;
@@ -118,7 +119,7 @@
         mouse {
             bindings = <
 &none  &none  &none        &none  &none                                   &kp LS(LG(DOWN_ARROW)) &kp LS(LG(UP_ARROW))   &kp LS(LA(LG(LEFT)))    &kp LS(LG(LA(UP_ARROW))) &none
-&none  &none  &none        &none  &none            &none                   &kp LG(RIGHT)          &kp LS(LG(LEFT_ARROW)) &kp LS(LG(RIGHT))      &kp LS(LA(LG(DOWN_ARROW))) &kp LS(LA(LG(RIGHT)))  &none
+&none  &none  &none        &none  &none            &none                   &kp LG(right)          &kp LS(LG(LEFT_ARROW)) &kp LS(LG(RIGHT))      &kp LS(LA(LG(DOWN_ARROW))) &kp LS(LA(LG(RIGHT)))  &none
 &none  &none  &none        &none  &none            &none                   &kp LG(LEFT)           &mkp LCLK              &mkp RCLK              &mkp MB3                 &mkp MB4                  &mkp MB5
 &none  &none  &kp LC(UP_ARROW) &none  &none            &none                   &none                  &none                  &kp ESCAPE
             >;
