@@ -62,4 +62,18 @@
     };
 };
 
+/* ----- ここから下をファイルの末尾に追記 ----- */
 
+/ {
+    input_processors {
+        compatible = "zmk,input-processors";
+        my_trackball_scaler: my_trackball_scaler {
+            compatible = "zmk,input-processor-scaler";
+            scale = <3.0>; /* 速度の倍率。2.0で2倍速 */
+        };
+    };
+};
+
+&trackball_listener {
+    processors = <&my_trackball_scaler>;
+};
