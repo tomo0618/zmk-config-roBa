@@ -28,6 +28,11 @@
             bindings = <&bt BT_SEL 4>;
             key-positions = <40 41>;
         };
+
+        screenshot {
+            bindings = <&kp LS(LG(NUMBER_4))>;
+            key-positions = <35 36>;
+        };
     };
 
     macros {
@@ -86,10 +91,10 @@
 
         vector {
             bindings = <
-&none         &kp LG(W)     &kp LG(P)         &kp LC(H)  &kp RS(RG(NUMBER_3))                                     &kp LBKT        &kp RBKT        &kp DOUBLE_QUOTES  &kp HASH         &kp BACKSPACE
-&kp LG(A)     &kp LG(S)     &kp RS(RG(S))     &kp LG(F)  &kp C_AC_ZOOM_OUT     &kp LS(LG(V))       &kp LG(LS(Z))  &kp PIPE        &kp UP_ARROW    &kp UNDER          &kp AT_SIGN      &kp PERCENT
-&kp LG(Z)     &kp LG(X)     &kp LG(C)         &kp LG(V)  &kp C_AC_ZOOM_IN      &kp LEFT_SHIFT      &kp LG(Z)      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT          &kp EXCLAMATION  &kp QUESTION
-&kp LEFT_WIN  &kp LEFT_ALT  &kp LC(UP_ARROW)  &kp SPACE  &bt BT_SEL 2          &none               &kp ENTER      &none                                                               &kp ESCAPE
+&none         &kp LG(W)     &kp LG(P)         &kp LC(H)  &kp RS(RG(NUMBER_3))                                     &kp LBKT        &kp RBKT  &kp DOUBLE_QUOTES  &kp HASH     &kp BACKSPACE
+&kp LG(A)     &kp LG(S)     &kp RS(RG(S))     &kp LG(F)  &kp C_AC_ZOOM_OUT     &kp LS(LG(V))       &kp LG(LS(Z))  &kp LC(UNDER)   &kp UP    &kp UP             &kp AT_SIGN  &kp PERCENT
+&kp LG(Z)     &kp LG(X)     &kp LG(C)         &kp LG(V)  &kp C_AC_ZOOM_IN      &kp LEFT_SHIFT      &kp LG(Z)      &kp LEFT_ARROW  &kp LEFT  &kp DOWN           &kp RIGHT    &kp QUESTION
+&kp LEFT_WIN  &kp LEFT_ALT  &kp LC(UP_ARROW)  &kp SPACE  &bt BT_SEL 2          &none               &kp ENTER      &none                                                     &kp ESCAPE
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
