@@ -10,6 +10,8 @@
     quick-tap-ms = <0>;
 };
 
+&lt { tapping-term-ms = <220>; };
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -19,24 +21,19 @@
             key-positions = <39 38>;
         };
 
-        bt3 {
-            bindings = <&bt BT_SEL 3>;
+        bt2 {
+            bindings = <&bt BT_SEL 2>;
             key-positions = <28 16>;
         };
 
-        bt2 {
-            bindings = <&bt BT_SEL 2>;
+        bt1 {
+            bindings = <&bt BT_SEL 1>;
             key-positions = <40 41>;
         };
 
         screenshot {
             bindings = <&kp LS(LG(N5))>;
             key-positions = <35 36>;
-        };
-
-        bt1 {
-            bindings = <&bt BT_SEL 1>;
-            key-positions = <37 38>;
         };
     };
 
@@ -85,10 +82,10 @@
 
         num {
             bindings = <
-&kp F9        &kp F10       &kp F11           &kp F12    &kp LEFT_BRACKET                                            &mt ASTERISK SLASH                      &kp N7  &kp N8  &kp N9  &mt GREATER_THAN LESS_THAN
-&kp F5        &kp F6        &kp LC(I)         &kp F8     &kp RIGHT_BRACKET  &kp LS(LG(V))       &mt SEMICOLON COLON  &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp N4  &kp N5  &kp N6  &mt PLUS MINUS
-&kp F1        &kp F2        &kp F3            &kp F4     &kp LEFT_ALT       &kp LEFT_SHIFT      &kp BACKSPACE        &mt COMMA PERIOD                        &kp N1  &kp N2  &kp N3  &mt UNDER EQUAL
-&kp LEFT_WIN  &kp LEFT_ALT  &kp LC(UP_ARROW)  &kp SPACE  &none              &bt BT_SEL 1        &kp ENTER            &mt BSPC N0                                                     &kp ESC
+&kp F9        &kp F10       &kp F11           &kp F12    &kp LEFT_BRACKET                                            &kp SLASH     &kp N7  &kp N8  &kp N9  &kp PLUS
+&kp F5        &kp F6        &kp LC(I)         &kp F8     &kp RIGHT_BRACKET  &kp LS(LG(V))       &mt SEMICOLON COLON  &kp ASTERISK  &kp N4  &kp N5  &kp N6  &kp MINUS
+&kp F1        &kp F2        &kp F3            &kp F4     &kp LEFT_ALT       &kp LEFT_SHIFT      &kp COMMA            &kp PERIOD    &kp N1  &kp N2  &kp N3  &kp EQUAL
+&kp LEFT_WIN  &kp LEFT_ALT  &kp LC(UP_ARROW)  &kp SPACE  &none              &bt BT_SEL 1        &kp ENTER            &mt BSPC N0                           &kp ESC
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -96,10 +93,10 @@
 
         vector {
             bindings = <
-&none         &kp LG(W)     &kp LG(P)         &kp LC(H)  &kp RS(RG(NUMBER_3))                                     &none  &kp UNDERSCORE  &kp DOUBLE_QUOTES  &kp HASH     &kp BACKSPACE
-&kp LG(A)     &kp LG(S)     &kp RS(RG(S))     &kp LG(F)  &kp C_AC_ZOOM_OUT     &kp LS(LG(V))       &kp LG(LS(Z))  &none  &none           &kp UP             &kp AT_SIGN  &kp PERCENT
-&kp LG(Z)     &kp LG(X)     &kp LG(C)         &kp LG(V)  &kp C_AC_ZOOM_IN      &kp LEFT_SHIFT      &kp LG(Z)      &none  &kp LEFT        &kp DOWN           &kp RIGHT    &mt QUESTION EXCLAMATION
-&kp LEFT_WIN  &kp LEFT_ALT  &kp LC(UP_ARROW)  &kp SPACE  &bt BT_SEL 2          &none               &kp ENTER      &none                                                  &kp ESCAPE
+&none         &kp LG(W)     &kp LG(P)         &kp LC(H)  &kp RS(RG(NUMBER_3))                                     &mt LESS_THAN GREATER_THAN  &kp UNDERSCORE  &kp DOUBLE_QUOTES  &kp HASH     &kp BACKSPACE
+&kp LG(A)     &kp LG(S)     &kp RS(RG(S))     &kp LG(F)  &kp C_AC_ZOOM_OUT     &kp LS(LG(V))       &kp LG(LS(Z))  &none                       &none           &kp UP             &kp AT_SIGN  &kp PERCENT
+&kp LG(Z)     &kp LG(X)     &kp LG(C)         &kp LG(V)  &kp C_AC_ZOOM_IN      &kp LEFT_SHIFT      &kp LG(Z)      &none                       &kp LEFT        &kp DOWN           &kp RIGHT    &mt QUESTION EXCLAMATION
+&kp LEFT_WIN  &kp LEFT_ALT  &kp LC(UP_ARROW)  &kp SPACE  &bt BT_SEL 2          &none               &kp ENTER      &none                                                                       &kp ESCAPE
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
